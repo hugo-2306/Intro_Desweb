@@ -1,0 +1,36 @@
+/*Gerarquía de los estilos:
+1)inline: Son los estilos que se ponen directamente en la etiqueta html
+ejemplo: <h1 sytle="color:blue;">
+2)usando el tag <style> en el documento html
+ejemplo: <style>
+        h1 {color:red;}
+        </style>
+3)hoja de estilos: Se agrega la etiqueta link (dentro del archivo html) con los
+atributos rel="stylesheet" que indica que es una hoja de estilos y 
+ref="/css/estilos.css" que indica la ruta del archivo.
+
+el atributo !important sirve para sobreescribir esta gerarquía pero no es 
+una buena práctica hacer uso de el por que rompe la precedencia (cascada)*/
+
+/*
+Ejemplos de Selectores de atributos Mozilla:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+*/
+
+/* Reglas se conforman de:
+- selectores: como identificamos un elemento en html
+- declaraciones: todo lo que hacemos con el selector
+- propiedades: dicta que aspecto del selector sera cambiado
+- valores: variables que esperan las propiedades que indican el valor al cual
+           van a cambiar los elementos del selector.
+ */
+
+/* selector de etiqueta (header, section, article, etc) header{} */
+/* selector descendente: body header div nav ol li a {} */
+/* selector de clase: html class="seccion_principal" css .seccion_principal {} */
+/* selector de ID: #elnombreDelId {} */
+
+
+ header{
+    background-color: pink;
+}

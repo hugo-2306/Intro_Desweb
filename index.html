@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola soy Leonidas Esteban</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
     <header>
@@ -15,13 +16,13 @@
                 <nav>
                     <ol>
                         <li>
-                            <a href="#">Portafolio</a>
+                            <a class="link" href="#portafolio">Portafolio</a> <!--la navegación interna la hacemos con # y un ID entre los tags que queremos ligar-->
                         </li>
                         <li>
-                            <a href="#">Experiencia</a>
+                            <a class="link" href="#eventos">Experiencia</a>
                         </li>
                         <li>
-                            <a href="#">Trabajemos juntos</a>
+                            <a class="link" href="#contacto">Trabajemos juntos</a>
                         </li>
                     </ol>
                 </nav>
@@ -33,7 +34,7 @@
         </h1>
         <img src="images/hero.jpg" width="500" height="300" alt="imágen principal del sitio">
     </section>
-    <section>
+    <section id="portafolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
         <article>
             <h3>Platzi Video</h3>
@@ -48,7 +49,7 @@
             <img src="images/platzi-video-react-native.png" width="500" alt="Proyecto del curso de react native">
         </article>
     </section>
-    <section>
+    <section id="eventos">
         <h2>Más sobre mi experiencia</h2>
         <article>
             <figure>
@@ -58,10 +59,19 @@
             <p>El evento más grande sobre gente que quiere aprender más de internet. En
                 este evento te comparto como tener una vida de constante aprendizaje.
             </p>
-            <a href="#">Ver Plática</a>
+            <a href="https://youtu.be/BIS7cWGgJg0" target="_blank">Ver Plática</a> <!--target="_blank" sirve para abrir el link en una ventana nueva-->
         </article>
     </section>
-    <section>sección contacto</section>
+    <section id="contacto">
+        <form action="/suscripcion/"> <!--formulario para el correo-->
+            <h3>¿Creamos algo juntos?</h3>
+            <input type="text" placeholder="Déjame tu email" id="email"> <!--caja para el input, el atributo placeholder es para agregar el texto quue sirve como guía para el usuario -->
+                                                                                <!--El atributo value sobreescribira al atributo place holder y si este es removido por el usuario se moestrará el place holder-->
+            <button>Enviar</button>
+        </form>
+    </section>
     <footer></footer>
 </body>
 </html>
+
+<!--Formularios (form, input, placeholder button), Navegación interna con # y extrerna con href y target _blank-->
