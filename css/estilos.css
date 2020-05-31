@@ -30,7 +30,21 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
 /* selector de clase: html class="seccion_principal" css .seccion_principal {} */
 /* selector de ID: #elnombreDelId {} */
 
-
+/* 
  header{
     background-color: pink;
+} */
+/* Aplicamos al sitio una fuente externa usando https://fonts.google.com/
+usamos la etiquteta link dentro del html y llamamos a las fuentes en la
+hoja de estilos. Las fuentes que constan de varias palabras se citan 
+dentro de '' las fuentes se separan por , y se ocupan más de 1 como respaldo
+por si la que ocupas no llegara a estar disponible.  */
+
+body{
+        font-family: 'Source Sans Pro', sans-serif;
 }
+
+h1,h2,h3,h4,h5,h6{
+        font-family: 'Fjalla One', sans-serif;
+}
+
