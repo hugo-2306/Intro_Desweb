@@ -46,5 +46,24 @@ body{
 
 h1,h2,h3,h4,h5,h6{
         font-family: 'Fjalla One', sans-serif;
+        font-weight: normal;
 }
 
+h1{
+        font-size: 40px; 
+        line-height: 1.5; /* Espaciado entre líneas */
+        letter-spacing: -.2px; /* Espaciado entre letras */
+
+}
+
+.hero{
+        height: 300px;
+}
+
+.project-details{
+        width: 500px;
+}
+
+.project-imageContainer{
+        width: 500px;
+}
