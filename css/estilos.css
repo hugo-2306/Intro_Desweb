@@ -40,8 +40,12 @@ hoja de estilos. Las fuentes que constan de varias palabras se citan
 dentro de '' las fuentes se separan por , y se ocupan más de 1 como respaldo
 por si la que ocupas no llegara a estar disponible.  */
 
+/* En el inspector de elementos el margen es de color naranja, el padding de color verde
+y el contenido de color azul */
+
 body{
         font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -72,12 +76,23 @@ h1 strong{
 
 }
 
+.portfolio{
+        background: #fafafa;
+}
+
+/* El conjunto de padding, border, margin y tamaño forman el modelo de caja */
+/* El tamaño de un elemento lo coforman sus propiedades width y height + padding + border + margin */
 .project {
         /* border-color:; color del borde 
         border-width:;  ancho del borde 
         border-style:;  estilo del borde */
         border: 1px solid gray; /* ancho estilo color */
         border-radius: 10px; /* redondear los bordes */
+        margin: 10px;
+        margin-bottom: 15px;
+        padding: 20px;
+        background: white;
+        display: flex;
 }
 
 .project-details{
