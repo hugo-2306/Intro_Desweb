@@ -48,6 +48,17 @@ body{
         margin: 0;
 }
 
+
+figure{
+        margin: 0;
+}
+
+ol, ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+}
+
 h1,h2,h3,h4,h5,h6{
         font-family: 'Fjalla One', sans-serif;
         font-weight: normal;
@@ -58,6 +69,7 @@ h1{
         line-height: 1.5; /* Espaciado entre líneas */
         letter-spacing: -.2px; /* Espaciado entre letras */
         color: white;
+        margin: 0;
 
 }
 
@@ -73,6 +85,8 @@ h1 strong{
         background-repeat: no-repeat; /* evitar que la imagen de fondo se repita por todo el elemento */
         background-position-x: right; /* ajustar el margen en el eje x */
         background-color: #1b2127;
+        display: flex;
+        align-items: center;
 
 }
 
@@ -106,11 +120,46 @@ h1 strong{
 .header{
         background-color: #1b2127; /* color de fondo en el elemento */
         color: white; /* color de texto en el elemento */
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
 }
 
 
+.header ol{
+        display: flex;
+        height: inherit;
+}
+
+.header ol li{
+        height: inherit;
+}
 .header a{ /* anclas dentro del header */
         color:white;
         text-decoration: none; /* quitar el estilo predeterminado del elemento, en este caso el subrayado */
+        height: inherit;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+}
 
+.menu{
+        height: inherit;
+}
+
+.footer{
+        background-color: #1b2127;
+        color: white;
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+}
+
+.footer img{
+        vertical-align: middle;
+}
+
+.footer a{
+        color: white;
 }
