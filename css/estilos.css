@@ -89,14 +89,19 @@ h2{
 .hero{
         height: 300px; /* alto del elemento */
         /* con ../ me regreso una carpeta en relación a la ruta del archivo */
-        background-image: url('../images/hero.jpg'); /* imagen de fondo en el elemento */
-        background-size: 500px 300px;   /* ajustar el tamaño de la imagen de fondo (width height) */
-        background-repeat: no-repeat; /* evitar que la imagen de fondo se repita por todo el elemento */
-        background-position-x: right; /* ajustar el margen en el eje x */
+        /* background-image: url('../images/hero.jpg'); */ /* imagen de fondo en el elemento */
+        /* background-size: 500px 300px; */   /* ajustar el tamaño de la imagen de fondo (width height) */
+        /* background-repeat: no-repeat; */ /* evitar que la imagen de fondo se repita por todo el elemento */
+        /* background-position-x: right; */ /* ajustar el margen en el eje x */
         background-color: #1b2127;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        
+}
 
+.hero-image{
+        object-fit: cover; /* Dimensiones originales de la imágen */
 }
 
 .portfolio{
@@ -197,6 +202,7 @@ h2{
 
 .event-list{
         display: flex;
+        flex-wrap: wrap;
 }
 
 .event-list-title{
@@ -301,3 +307,16 @@ h2{
 .form-email h3{
         font-family: 'Source Sans Pro', sans-serif;
 }
+
+.container{
+        width: 1000px;
+        margin: 0 auto;
+        display: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+        height: inherit;
+        flex-wrap: inherit;
+        /* border: 1px solid red; */
+
+}
+
